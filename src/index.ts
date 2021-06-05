@@ -3,6 +3,7 @@ import { person, printPerson } from "./anonymousInterface_01";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
 import Person05 from "./staticClass_05";
+import { person06 } from "./typeConversion_06";
 
 //01 anonymous interface
 console.log(person);
@@ -32,4 +33,10 @@ console.clear();
 //05 static class
 const person05: Person05 = Person05.printPerson05("Woong", 31);
 console.log(person05);
+console.clear();
+
+//06 type conversion
+//person06.name; / error! because object is not define name.
+let name1 = (<{ name: string }>person06).name;
+console.log(name1);
 console.clear();
