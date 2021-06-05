@@ -1,3 +1,5 @@
-import { testMakePerson } from "./utils/makePerson";
+import { person, printPerson } from "./anonymousInterface";
 
-testMakePerson();
+//01 anonymous interface
+console.log(person);
+printPerson(person);
