@@ -37,6 +37,7 @@ console.clear();
 
 //06 type conversion
 //person06.name; / error! because object is not define name.
-let name1 = (<{ name: string }>person06).name;
+let name1 = (<{ name: string }>person06).name; // conversion
+let name2 = (person06 as { name: string }).name; // assertion
 console.log(name1);
-console.clear();
+console.log(name2);
