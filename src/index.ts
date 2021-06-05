@@ -2,6 +2,7 @@ import Person04 from "./AbstractClass_04";
 import { person, printPerson } from "./anonymousInterface_01";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
+import Person05 from "./staticClass_05";
 
 //01 anonymous interface
 console.log(person);
@@ -26,4 +27,9 @@ console.clear();
 //04 abstract class
 const person04: Person04 = new Person04("Woong", 31);
 console.log(person04.printPerson04("Woong", 31));
+console.clear();
+
+//05 static class
+const person05: Person05 = Person05.printPerson05("Woong", 31);
+console.log(person05);
 console.clear();
