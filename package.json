@@ -1,7 +1,7 @@
 {
   "name": "typescript_rewind",
   "version": "1.0.0",
-  "description": "",
+  "description": "Typescript rewind",
   "main": "index.js",
   "scripts": {
     "dev": "ts-node src",

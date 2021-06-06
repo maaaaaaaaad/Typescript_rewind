@@ -3,6 +3,7 @@ import { person, printPerson } from "./anonymousInterface_01";
 import { f } from "./callback_07";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
+import { indexable, _indexable } from "./indexableType_08";
 import Person05 from "./staticClass_05";
 import { person06 } from "./typeConversion_06";
 
@@ -45,6 +46,15 @@ console.log(name2);
 console.clear();
 
 //07 callback
-const result = f(() => console.log("DOOOOOONG"), "OH", "WOONG");
-console.log(result);
+const result07 = f(() => console.log("DOOOOOONG"), "OH", "WOONG");
+console.log(result07);
+console.clear();
+
+//08 indexable type
+//(1)
+const result08 = indexable("name", "Woong");
+console.log(result08);
+//(2)
+const _result08 = _indexable("name", "Dong");
+console.log(_result08);
 console.clear();
