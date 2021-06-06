@@ -1,5 +1,6 @@
 import Person04 from "./AbstractClass_04";
 import { person, printPerson } from "./anonymousInterface_01";
+import { f } from "./callback_07";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
 import Person05 from "./staticClass_05";
@@ -41,3 +42,9 @@ let name1 = (<{ name: string }>person06).name; // conversion
 let name2 = (person06 as { name: string }).name; // assertion
 console.log(name1);
 console.log(name2);
+console.clear();
+
+//07 callback
+const result = f(() => console.log("DOOOOOONG"), "OH", "WOONG");
+console.log(result);
+console.clear();

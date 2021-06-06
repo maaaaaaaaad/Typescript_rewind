@@ -1,3 +1,5 @@
+//conversion > assertion
+
 export let person06: object = {
   name: "Woong",
   age: 31,
