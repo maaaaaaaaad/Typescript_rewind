@@ -29,7 +29,7 @@ console.log(chain);
 console.clear();
 ```
 
-## 11.Method chaining
+## 11.Array 01 split
 
 **Array is Object to Javascript. because array is instance of "Array".**
 
