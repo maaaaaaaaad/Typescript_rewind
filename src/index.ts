@@ -4,6 +4,7 @@ import { f } from "./callback_07";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
 import { indexable, _indexable } from "./indexableType_08";
+import { Method, _Method } from "./method_09";
 import Person05 from "./staticClass_05";
 import { person06 } from "./typeConversion_06";
 
@@ -57,4 +58,14 @@ console.log(result08);
 //(2)
 const _result08 = _indexable("name", "Dong");
 console.log(_result08);
+console.clear();
+
+//09 method
+const result09 = new Method(100);
+const _result09 = result09.method();
+console.log(_result09);
+
+const asd = new _Method(1000);
+const _asd = asd.method();
+console.log(_asd);
 console.clear();
