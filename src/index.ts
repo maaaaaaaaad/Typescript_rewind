@@ -4,6 +4,7 @@ import { f } from "./callback_07";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
 import { indexable, _indexable } from "./indexableType_08";
+import { calculator } from "./methodChain_10";
 import { Method, _Method } from "./method_09";
 import Person05 from "./staticClass_05";
 import { person06 } from "./typeConversion_06";
@@ -68,4 +69,9 @@ console.log(_result09);
 const asd = new _Method(1000);
 const _asd = asd.method();
 console.log(_asd);
+console.clear();
+
+//10 method chain
+const chain = new calculator(4).plus(3).multi(2).value;
+console.log(chain);
 console.clear();
