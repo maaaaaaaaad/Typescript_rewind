@@ -1,6 +1,7 @@
 import Person04 from "./AbstractClass_04";
 import { person, printPerson } from "./anonymousInterface_01";
 import { arr01, split } from "./array_11_split";
+import { join } from "./array_12_join";
 import { f } from "./callback_07";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
@@ -77,7 +78,7 @@ const chain = new calculator(4).plus(3).multi(2).value;
 console.log(chain);
 console.clear();
 
-//11 array
+//11 array_split
 const result11 = arr01;
 console.log(result11);
 
@@ -86,5 +87,9 @@ console.log(_arr01);
 
 const _arr02 = split("Hello World");
 console.log(_arr02);
+console.clear();
 
+//12 array_join
+const result12 = join(_arr02);
+console.log(result12);
 console.clear();

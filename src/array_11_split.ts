@@ -8,5 +8,5 @@ export const arr01: string[] = stringElement.split(splitComma).map((ele) => {
 });
 
 // ex2)
-export const split = (str: string, del: string = ""): string[] =>
+export const split = (str: string, del: string = " "): string[] =>
   str.split(del);
