@@ -2,6 +2,7 @@ import Person04 from "./AbstractClass_04";
 import { person, printPerson } from "./anonymousInterface_01";
 import { arr01, split } from "./array_11_split";
 import { join } from "./array_12_join";
+import { index } from "./array_13_index";
 import { f } from "./callback_07";
 import Person03Impl from "./classAndInterface_03";
 import Person01 from "./class_02";
@@ -93,3 +94,8 @@ console.clear();
 const result12 = join(_arr02);
 console.log(result12);
 console.clear();
+
+//13 array_index
+const indexArr = [1, 2, "a", "b", "c"];
+const result13 = index(indexArr);
+console.log(result13);
