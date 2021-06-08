@@ -47,3 +47,31 @@ import split from "src/array_11_split.ts";
 const _arr01 = split("Hello World", ","); // ['Hello World']
 const _arr02 = split("Hello World"); // ['H', 'e', 'l', 'l', ... 'r', 'l', 'd']
 ```
+
+## 13.Array 03 index
+
+**StrNumber = string[] | number[], Error that the testArr item type is "never".**
+
+src/array_13_index.ts
+
+```javascript
+type StrNum = (string | number)[];
+let newArr: StrNum = [];
+
+export const index = (testArr: StrNum): StrNum => {
+  for (let i of testArr) {
+    newArr.push(i);
+  }
+  return newArr;
+};
+```
+
+src/index.ts
+
+```javascript
+import { index } from "./array_13_index";
+
+const indexArr = [1, 2, "a", "b", "c"];
+const result13 = index(indexArr);
+console.log(result13); // [1, 2, "a", "b", "c"]
+```
